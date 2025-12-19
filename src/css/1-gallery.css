@@ -1,0 +1,25 @@
+.gallery {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.gallery-item {
+    width: 200px;
+    flex: 1 1 calc(33.3% - 15px);
+    object-fit: cover;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+    transform: scale(103%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-image {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+}
